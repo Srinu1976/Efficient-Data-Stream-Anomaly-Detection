@@ -1,18 +1,24 @@
 # Efficient Data Stream Anomaly Detection
 
-## Overview
-This project focuses on detecting anomalies in financial transactions, particularly credit card transactions, using advanced machine learning techniques. By simulating a continuous data stream, the goal is to identify unusual patterns that may indicate fraudulent activity.
+## Project Overview
 
-## Objectives
-- Develop a Python script that utilizes **Isolation Forest** and **Local Outlier Factor (LOF)** to detect anomalies.
-- Analyze the effectiveness of both algorithms in identifying fraudulent transactions.
-- Generate detailed statistics on the detected anomalies for better insights.
+This project aims to detect anomalies in credit card transactions, leveraging advanced machine learning algorithms to identify potential fraud. By analyzing a simulated stream of transaction data, the system will learn to recognize unusual patterns that deviate from typical spending behavior. The primary focus is on enhancing fraud detection accuracy while minimizing false positives, ensuring secure and efficient financial transactions.
+
+## Project Objectives
+
+- Create a Python script that implements **Isolation Forest** and **Local Outlier Factor (LOF)** for anomaly detection in financial transactions.
+- Evaluate and compare the performance of both algorithms in identifying fraudulent activities.
+- Produce comprehensive statistics and visualizations on the detected anomalies to gain deeper insights into the patterns of fraudulent transactions.
 
 ## Dataset
-The project employs the **Credit Card Fraud Detection** dataset from Kaggle. It contains various features representing transactions, with labels indicating whether they are fraudulent or legitimate.
+
+The project utilizes the **Credit Card Fraud Detection** dataset sourced from Kaggle. This dataset comprises a variety of features that represent individual transactions, along with labels that indicate whether each transaction is fraudulent or legitimate. It serves as a critical foundation for training and evaluating the anomaly detection algorithms employed in this project.
+
 
 ### Data Preview
-Sample data format:
+
+The dataset follows a structured format with the following columns:
+
 ```plaintext
 Time, V1, V2, ..., V28, Amount, Class
 0, -1.35980713, 1.19185711, ..., -0.05395037, 149.62, 0
@@ -24,29 +30,23 @@ Time, V1, V2, ..., V28, Amount, Class
 ## Getting Started
 
 ### Requirements
-Ensure that you have the following installed on your machine:
+Before you begin, ensure that you have the following installed on your machine:
 
-- Python 3.x
-- pip (Python package manager)
+- **Python 3.x**: A programming language required to run the scripts.
+- **pip**: The Python package manager for installing dependencies.
 
 ### Project Structure
+The project directory is organized as follows:
+
 ```bash
 Anomaly_detection_cobblestone/
 │
-├── anomaly_detection.py        # The main script for anomaly detection.
-├── requirements.txt            # A list of required Python packages.
-├── .gitignore                  # A file that specifies which files and directories to ignore in the repository.
-├── README.md                   # This file.
-└── creditcard.csv              # The dataset for credit card transactions.
+├── anomaly_detection.py        # Main script for anomaly detection.
+├── requirements.txt            # List of required Python packages.
+├── .gitignore                  # Specifies files and directories to ignore in the repository.
+├── README.md                   # Documentation for the project.
+└── creditcard.csv              # Dataset containing credit card transactions.
 ```
-#### Setting Up the Project
-
-### 1.Download the Dataset
-
-1. Go to the Kaggle dataset page: [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
-2. Sign in to your Kaggle account (or create one if you don't have an account).
-3. Click on the "Download" button to download the dataset as a ZIP file.
-4. Extract the ZIP file, and place the `creditcard.csv` file in the project directory.
 
 ### 2.Clone the Repository
 To clone the repository, use the following command:
