@@ -14,7 +14,6 @@ This project aims to detect anomalies in credit card transactions, leveraging ad
 
 The project utilizes the **Credit Card Fraud Detection** dataset sourced from Kaggle. This dataset comprises a variety of features that represent individual transactions, along with labels that indicate whether each transaction is fraudulent or legitimate. It serves as a critical foundation for training and evaluating the anomaly detection algorithms employed in this project.
 
-
 ### Data Preview
 
 The dataset follows a structured format with the following columns:
@@ -26,6 +25,7 @@ Time, V1, V2, ..., V28, Amount, Class
 2, -0.96662024, 0.36188434, ..., 0.19811233, 378.66, 0
 ...
 ```
+
 
 ## Getting Started
 
@@ -48,18 +48,21 @@ Anomaly_detection_cobblestone/
 └── creditcard.csv              # Dataset containing credit card transactions.
 ```
 
-### 2.Clone the Repository
-To clone the repository, use the following command:
+### 2. Clone the Repository
+
+To clone the repository, run the following command in your terminal:
+
 ```bash
-git clone https://github.com/Lohit2005/FinancialAnomalyTracker
+git clone https://github.com/Srinu1976/Efficient-Data-Stream-Anomaly-Detection
 ```
 
 ### 3.Install Requirements
 Navigate to the project directory and install the required packages using the following command:
 ```bash
-cd FinancialAnomalyTracker
+cd Efficient-Data-Stream-Anomaly-Detection
 ```
 ### 4.Install Dependencies
+Install the necessary Python packages using:
 ```bash
 pip install -r requirements.txt
 ```
@@ -79,6 +82,16 @@ Local Outlier Factor - Detected Anomalies: Y
 ```
 
 ### References
+
+Credit Card Fraud Detection Dataset: Kaggle Dataset
+	•	Isolation Forest: Documentation for Isolation Forest in scikit-learn
+	•	Local Outlier Factor: Documentation for LOF in scikit-learn
+	•	Matplotlib: Official Documentation for the Python Plotting Library
+	•	Pandas: Data Analysis Library for Python
+	•	NumPy: Fundamental Package for Numerical Computing in Python
+	•	Online Anomaly Detection for Data Streams: StreamAD GitHub Repository
+	•	Streaming Anomaly Detection Framework in Python: pysad GitHub Repository
+	•	Research Papers: Awesome Anomaly Detection GitHub Repository
 
 - **Credit Card Fraud Detection Dataset**: [Kaggle Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 - **Isolation Forest**: [Documentation for Isolation Forest in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html)
